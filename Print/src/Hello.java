@@ -7,8 +7,18 @@ public class Hello {
     //출력문. 소괄호 안의 내용을 출력 + 한 줄 개행
     //문자열을 출력할 때에는 반드시 쌍따옴표에 감싸야 함!
     //문자 : 한 글자, 문자열 : 한 글자 이상의 글자
-    System.out.println("Hello, Java");
+    System.out.println("hi~");
     System.out.println("A");
+
+    //소괄호 안의 내용을 출력
+    System.out.print("hi~");
+    System.out.print("hi~");
+    System.out.println("hi~");
+
+    //숫자는 쌍따옴표에 감싸지 않는다
+    System.out.println(5);
+    System.out.println("5");
+
 
     /*int count;
     count = 10;
