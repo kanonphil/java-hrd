@@ -17,5 +17,6 @@ public class Variable1 {
     //출력문 안의 문자열이 쌍따옴표에 감싸져 있지 않다면 문자열이 아니라 변수를 의미함
     System.out.println(num);
     System.out.println("num"); //num이라는 문자열을 출력
+    System.out.println("num = " + num);
   }
 }

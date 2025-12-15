@@ -1,0 +1,2 @@
+public class Variable2 {
+}
