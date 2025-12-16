@@ -1,6 +1,6 @@
 public class DataType3 {
   public static void main(String[] args) {
-    //형 변환
+    //형 변환 - 정수와 실수의 형 변환
     //자바는 자료형이 다른 데이터를 저장할 수 없다는 원치
     int num1 = 10;
 
