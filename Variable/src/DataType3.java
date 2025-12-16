@@ -11,6 +11,7 @@ public class DataType3 {
 
     //개발자가 강제적(직접)으로 자료형을 변경할 수 있음
     //이것을 '강제 형 변환(casting)'이라 한다.
+    //강제 형 변환 문법 : (바꾸고자 하는 자료형)데이터;
     double num3 = 5.5;
     int num4 = (int)num3;
     System.out.println(num4);
