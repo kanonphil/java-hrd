@@ -8,6 +8,6 @@ public class ScannerEx {
     System.out.print("이름을 입력하세요 : ");
     //sc.next() -> 키보드로 문자열을 입력받는 명령어
     String name = sc.next();
-    System.out.println("입력받은 이름: " + name);
+    System.out.println("입력받은 이름 : " + name);
   }
 }
