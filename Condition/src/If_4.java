@@ -9,6 +9,7 @@ public class If_4 {
     System.out.print("정수입력 : ");
     int num = sc.nextInt();
 
+    //if 문
     if (num > 0) {
       System.out.println(1);
     }
