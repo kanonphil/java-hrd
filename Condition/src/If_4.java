@@ -11,9 +11,11 @@ public class If_4 {
 
     if (num > 0) {
       System.out.println(1);
-    } else if (num < 0) {
+    }
+    else if (num < 0) {
       System.out.println(2);
-    } else if (num == 0) {
+    }
+    else if (num == 0) {
       System.out.println(3);
     }
   }
