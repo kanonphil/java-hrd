@@ -7,6 +7,7 @@ public class Test1_4 {
 
     System.out.print("정수를 하나 입력하세요 : ");
     num = sc.nextInt();
+    //0은 모든 수의 배수
     if (num % 3 == 0) {
       System.out.println("3의 배수입니다.");
     }
