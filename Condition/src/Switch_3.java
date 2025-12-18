@@ -6,18 +6,23 @@ public class Switch_3 {
     //score < 70 ===> 'D'
 
     int score = 87;
+    String grade = "";
 
     switch (score / 10) {
+      case 10:
+        grade = "A";
+        break;
       case 9:
-        System.out.println("A");
+        grade = "A";
         break;
       case 8:
-        System.out.println("B");
+        grade = "B";
         break;
       case 7:
-        System.out.println("C");
+        grade = "C";
       default:
-        System.out.println("D");
+        grade = "D";
     }
+    System.out.println(grade);
   }
 }
