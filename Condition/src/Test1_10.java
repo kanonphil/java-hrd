@@ -1,3 +1,4 @@
+//시험문제
 import java.util.Scanner;
 
 public class Test1_10 {
