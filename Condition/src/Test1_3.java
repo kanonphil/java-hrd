@@ -20,5 +20,8 @@ public class Test1_3 {
     else {
       System.out.println("같습니다.");
     }
+
+    //삼항연산자 - 조건이 3개 이상일 땐 굳이 안쓸거임 개귀찮
+    System.out.println(a > b ? "a" : a < b ? "b" : "같다");
   }
 }
