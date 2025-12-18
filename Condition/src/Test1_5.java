@@ -13,7 +13,7 @@ public class Test1_5 {
     else if (num > 80 && num <= 90) {
       System.out.println("학점은 B입니다.");
     }
-    else if (num <= 80) {
+    else {
       System.out.println("학점은 C입니다.");
     }
   }
