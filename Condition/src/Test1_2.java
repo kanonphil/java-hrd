@@ -13,5 +13,7 @@ public class Test1_2 {
     else {
       System.out.println("홀수입니다.");
     }
+
+    System.out.println(num % 2 == 0 ? "짝수" : "홀수");
   }
 }
