@@ -10,8 +10,6 @@ public class Switch_3 {
 
     switch (score / 10) {
       case 10:
-        grade = "A";
-        break;
       case 9:
         grade = "A";
         break;
