@@ -6,11 +6,21 @@ public class Test1_11 {
     int a = sc.nextInt();
     int b = sc.nextInt();
     int sum = 0;
-    a++;
-    while (a < b) {
+    while (a <= b) {
       sum += a;
       a++;
     }
     System.out.println(sum);
+
+
+    System.out.println("===================================");
+
+    int c = sc.nextInt();
+    int d = sc.nextInt();
+    int sum2 = 0;
+    for (int j = c; j <= d; j++){
+      sum2 += j;
+    }
+    System.out.println(sum2);
   }
 }
