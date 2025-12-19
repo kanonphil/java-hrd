@@ -8,11 +8,8 @@ public class Test1_4 {
 
     System.out.println("==========================================");
 
-    String result = "";
     for (int j = 10; j >= 0; j--){
-      result += j + "\n";
+      System.out.println(j);
     }
-
-    System.out.println(result);
   }
 }
