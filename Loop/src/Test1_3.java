@@ -14,5 +14,13 @@ public class Test1_3 {
       }
       j++;
     }
+
+    System.out.println();
+
+    for (int n = 2; n < 11; n++){
+      if (n % 2 == 0) {
+        System.out.print(n + " ");
+      }
+    }
   }
 }

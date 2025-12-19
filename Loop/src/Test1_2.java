@@ -5,5 +5,11 @@ public class Test1_2 {
       System.out.println(i);
       i++;
     }
+
+    System.out.println();
+
+    for (int j = 0; j <= 5; j++){
+      System.out.println(j);
+    }
   }
 }

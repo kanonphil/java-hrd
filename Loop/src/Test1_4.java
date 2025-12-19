@@ -6,10 +6,7 @@ public class Test1_4 {
       i--;
     }
 
-    for (int n = 0; n < 30; n++){
-      System.out.print("=");
-    }
-    System.out.println();
+    System.out.println("==========================================");
 
     String result = "";
     for (int j = 10; j >= 0; j--){
