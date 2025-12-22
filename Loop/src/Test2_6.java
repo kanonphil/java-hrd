@@ -21,9 +21,9 @@ public class Test2_6 {
       for (int j = 1; j < i + 1; j++) {
         if (i % j == 0) {
           cnt++;
-        }
-        if (cnt > 2) {
-          break;
+          if (cnt > 2) {
+            break;
+          }
         }
       }
       if (cnt == 2) {
