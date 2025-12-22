@@ -1,15 +1,15 @@
 public class Test2_6 {
   public static void main(String[] args) {
     for (int i = 2; i <= 30; i++){
-      boolean isPrimeNumber = true;
+      boolean isPrime = true;
 
       for (int j = 2; j <= Math.sqrt(i); j++){
         if (i % j == 0){
-          isPrimeNumber = false;
+          isPrime = false;
           break;
         }
       }
-      if (isPrimeNumber){
+      if (isPrime){
         System.out.println(i);
       }
     }
