@@ -1,15 +1,12 @@
 public class Test1_13 {
   public static void main(String[] args) {
-    int total = 0;
+    int sum = 0;
     int lastNum = 0;
-    for (int i = 1; i <= 1000; i++){
-      total += i;
-      if (total > 300) {
-        lastNum = i;
-        break;
-      }
+    for (int i = 1; sum <= 300; i++){
+      sum += i;
+      lastNum = i;
     }
-    System.out.println(total);
+    System.out.println(sum);
     System.out.println(lastNum);
   }
 }
