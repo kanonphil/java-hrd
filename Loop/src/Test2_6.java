@@ -22,6 +22,9 @@ public class Test2_6 {
         if (i % j == 0) {
           cnt++;
         }
+        if (cnt > 2) {
+          break;
+        }
       }
       if (cnt == 2) {
         System.out.println(i);
