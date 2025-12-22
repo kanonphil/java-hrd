@@ -16,5 +16,11 @@ public class Array_3 {
     String[] arr4 = {"java", "python", "c++"};
 
     //특정 값으로 초기화 된 배열을 생성할 때는 반드시 선언 및 생성을 동시에 진행해야 한다.
+    int[] arr5;
+    //arr5 = {1,2,3}; -> 오류
+
+    //배열의 크기(배열에 저장된 데이터의 수)를 확인할 수 있는 명령어
+    int[] arr6 = new int[8];
+    System.out.println(arr6.length);
   }
 }
