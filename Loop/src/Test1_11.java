@@ -5,22 +5,13 @@ public class Test1_11 {
     Scanner sc = new Scanner(System.in);
     int a = sc.nextInt();
     int b = sc.nextInt();
+    int max = a > b ? a : b;
+    int min = a > b ? b : a;
     int sum = 0;
-    while (a <= b) {
-      sum += a;
-      a++;
+
+    for (int i = min + 1; i < max; i++){
+      sum += i;
     }
     System.out.println(sum);
-
-
-    System.out.println("===================================");
-
-    int c = sc.nextInt();
-    int d = sc.nextInt();
-    int sum2 = 0;
-    for (int j = c; j <= d; j++){
-      sum2 += j;
-    }
-    System.out.println(sum2);
   }
 }
