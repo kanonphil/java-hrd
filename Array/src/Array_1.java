@@ -18,7 +18,7 @@ public class Array_1 {
     arr2 = new double[3];
 
     //문자열 5개를 저장할 수 있는 배열 arr3를 선언 및 생성
-    //문자열 배열은 생성 시 'null'로 초기화
+    //기본자료형을 제외한 모든 배열은 생성 시 'null'로 초기화
     //null -> 비어있다, 정해진 데이터가 없다
     String[] arr3 = new String[5];
 
