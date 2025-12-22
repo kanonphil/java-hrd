@@ -23,5 +23,8 @@ public class Array_3 {
     //배열.length 명령어로 배열의 크기를 확인할 수 있음
     int[] arr6 = new int[8];
     System.out.println(arr6.length);
+    for (int i = 0; i < arr6.length; i++) {
+      System.out.println(arr6[i]);
+    }
   }
 }
