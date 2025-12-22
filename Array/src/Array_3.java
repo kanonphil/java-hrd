@@ -20,6 +20,7 @@ public class Array_3 {
     //arr5 = {1,2,3}; -> 오류
 
     //배열의 크기(배열에 저장된 데이터의 수)를 확인할 수 있는 명령어
+    //배열.length 명령어로 배열의 크기를 확인할 수 있음
     int[] arr6 = new int[8];
     System.out.println(arr6.length);
   }
