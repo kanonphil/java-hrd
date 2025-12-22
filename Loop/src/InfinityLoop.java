@@ -11,6 +11,8 @@ public class InfinityLoop {
       int score = sc.nextInt();
       if (score >= 0 && score <= 100) {
         System.out.println("입력받은 점수 = " + score);
+        //switch문에서의 break랑 다르다.
+        //반복문 안에서의 break는 가장 가까운 반복문(for, while)을 벗어나는 명령
         break;
       }
     }
