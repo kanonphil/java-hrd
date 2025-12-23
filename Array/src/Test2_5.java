@@ -1,3 +1,5 @@
+// 시험 문제
+
 public class Test2_5 {
   public static void main(String[] args) {
     int[] arr = new int[6];
