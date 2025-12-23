@@ -19,10 +19,13 @@ public class Test1_12 {
     }
 
     for (int i = 0; i < scores.length - 1; i++) {
-      System.out.println(sbj[i] + "점수 = " + scores[i]);
       scores[scores.length - 1] += scores[i];
     }
     avg = scores[scores.length - 1] / (double)(scores.length - 1);
+
+    for (int i = 0; i < scores.length - 1; i++) {
+      System.out.println(sbj[i] + "점수 = " + scores[i]);
+    }
     System.out.println("총점 = " + scores[scores.length - 1]);
     System.out.println("평균 = " + avg);
   }
