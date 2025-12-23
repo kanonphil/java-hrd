@@ -22,7 +22,7 @@ public class Test1_12 {
       System.out.println(sbj[i] + "점수 = " + scores[i]);
       scores[scores.length - 1] += scores[i];
     }
-    avg = (double)scores[scores.length - 1] / sbj.length;
+    avg = scores[scores.length - 1] / (double)(scores.length - 1);
     System.out.println("총점 = " + scores[scores.length - 1]);
     System.out.println("평균 = " + avg);
   }
