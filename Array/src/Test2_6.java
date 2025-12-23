@@ -4,7 +4,7 @@ public class Test2_6 {
     int[] array = {1, 5, 3, 8, 2};
 
     for (int i = 0; i < array.length; i++) {
-      max = max > array[i] ? max : array[i];
+      max = Math.max(max, array[i]);
     }
 
     System.out.println("max: " + max);
