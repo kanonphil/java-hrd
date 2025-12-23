@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array_4 {
   public static void main(String[] args) {
     //배열이 자료형이라는 의미
@@ -14,5 +16,13 @@ public class Array_4 {
 
     //int a = 5;
     //int b = a;
+
+    int[] arr1 = {1, 3, 5}; //주소 2000
+    int[] arr2 = {4, 5};    //주소 2004
+    arr2 = arr1;            //arr2의 주소가 2000으로 바뀌로 2004 소실
+    arr2[0] = 6;            //6, 3, 5
+    arr1[1] = 7;            //6, 7, 5
+    System.out.println(Arrays.toString(arr1));
+    System.out.println(Arrays.toString(arr2));
   }
 }
