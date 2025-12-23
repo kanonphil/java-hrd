@@ -9,8 +9,8 @@ public class Test2_7 {
     int min = arr[0];
     for (int i = 0; i < arr.length; i++) {
       System.out.println(arr[i]);
-      max = max > arr[i] ? max : arr[i];
-      min = min < arr[i] ? min : arr[i];
+      max = Math.max(max, arr[i]);
+      min = Math.min(min, arr[i]);
     }
 
     System.out.println("max = " + max);
