@@ -1,14 +1,15 @@
 public class Test2_8 {
   public static void main(String[] args) {
     int[] arr = new int[100];
+
     for (int i = 0; i < arr.length; i++) {
       arr[i] = i + 1;
     }
+
     for (int i = 0; i < arr.length; i++) {
       if (isPrime(arr[i])) {
         System.out.println(arr[i]);
       }
-
     }
   }
 
