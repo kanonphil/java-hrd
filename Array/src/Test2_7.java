@@ -5,7 +5,7 @@ public class Test2_7 {
       arr[i] = (int)(Math.random() * 100) + 1;
     }
 
-    int max = 0;
+    int max = arr[0];
     int min = arr[0];
     for (int i = 0; i < arr.length; i++) {
       System.out.println(arr[i]);
