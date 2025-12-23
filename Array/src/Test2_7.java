@@ -11,6 +11,14 @@ public class Test2_7 {
       System.out.println(arr[i]);
       max = Math.max(max, arr[i]);
       min = Math.min(min, arr[i]);
+      /*
+      if (max < arr[i]) {
+        max = arr[i];
+      }
+      if (min > arr[i]) {
+        min = arr[i];
+      }
+      */
     }
 
     System.out.println("max = " + max);

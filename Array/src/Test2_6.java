@@ -5,6 +5,11 @@ public class Test2_6 {
 
     for (int i = 0; i < array.length; i++) {
       max = Math.max(max, array[i]);
+      /*
+      if (max < array[i]){
+        max = array[i];
+      }
+      */
     }
 
     System.out.println("max: " + max);
