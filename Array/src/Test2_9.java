@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Test2_9 {
   public static void main(String[] args) {
@@ -13,5 +14,6 @@ public class Test2_9 {
       used[num] = true;
       arr[i] = num;
     }
+    System.out.println(Arrays.toString(arr));
   }
 }
