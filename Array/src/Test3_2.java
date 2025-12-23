@@ -39,12 +39,11 @@ public class Test3_2 {
             max = max > scores[i] ? max : scores[i];
             sum += scores[i];
           }
-          int average = sum / scores.length;
+          double average = sum / (double)scores.length;
           System.out.println("최고 점수: " + max);
           System.out.println("평균 점수: " + average);
           break;
         case 5:
-          System.out.println("프로그램 종료");
         default:
           run = false;
       }
