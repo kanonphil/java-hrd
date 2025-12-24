@@ -2,7 +2,8 @@ public class Test2_5 {
   public static void main(String[] args) {
     int num = (int)(Math.random() * 101);
     System.out.println(num);
-    System.out.println(getGrade(num));
+    String result = getGrade(num);
+    System.out.println(result);
   }
 
   public static String getGrade(int num) {

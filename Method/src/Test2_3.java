@@ -1,6 +1,7 @@
 public class Test2_3 {
   public static void main(String[] args) {
-    System.out.println(getBigNum(10, 20));
+    int result = getBigNum(10, 20);
+    System.out.println(result);
   }
 
   public static int getBigNum(int num1, int num2) {
