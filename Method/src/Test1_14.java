@@ -11,11 +11,15 @@ public class Test1_14 {
   }
 
   public static void printMultiple(int a, int b) {
-    IntStream.rangeClosed(a, b).filter(i -> i % 5 == 0).forEach(i -> System.out.print(i + " "));
+    int max = Math.max(a, b);
+    int min = Math.min(a, b);
+    IntStream.rangeClosed(min, max).filter(i -> i % 5 == 0).forEach(i -> System.out.print(i + " "));
   }
 
   /*public static void printMultiple(int a, int b) {
-    for (int i = a; i <= b; i++) {
+    int max = Math.max(a, b);
+    int min = Math.min(a, b);
+    for (int i = min + 1; i < max; i++) {
       if (i % 5 == 0) {
         System.out.print(i + " ");
       }

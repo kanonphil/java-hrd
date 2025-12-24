@@ -7,15 +7,19 @@ public class Test1_13 {
     int num1 = sc.nextInt();
     int num2 = sc.nextInt();
     printNum(num1, num2);*/
-    printNum(3, 10);
+    printNum(30, 10);
   }
 
   public static void printNum(int a, int b) {
-    IntStream.rangeClosed(a, b).forEach(i -> System.out.print(i + " "));
+    int max = Math.max(a, b);
+    int min = Math.min(a, b);
+    IntStream.range(min + 1, max).forEach(i -> System.out.print(i + " "));
   }
 
   /*public static void printNum(int a, int b) {
-    for (int i = a; i <= b; i++) {
+    int max = Math.max(a, b);
+    int min = Math.min(a, b);
+    for (int i = min + 1; i < max; i++) {
       System.out.print(i + " ");
     }
   }*/
