@@ -1,12 +1,24 @@
+// 메서드(method)는 모든 프로그래밍 언어에 존재하는 문법
+// 함수 - 특징 기능을 정의한 것
+
 public class Method_1 {
-  public static void main(String[] args) {
-    // 메서드(method)는 모든 프로그래밍 언어에 존재하는 문법
-    // 함수 - 특징 기능을 정의한 것
-    hello();
+  //이름과 나이를 출력하는 메서드 정의
+  public static void printNameAge() {
+    System.out.println("이름은 홍길동입니다.");
+    System.out.println("나이는 20살입니다.");
   }
 
-  // 메서드의 정의
-  public static void hello() {
-    System.out.println("ㅎㅇ");
+  //메인 메서드를 정의
+  public static void main(String[] args) {
+    System.out.println("시작");
+    printNameAge();
+    printNameAge();
+    printHello();
+    System.out.println("종료");
+  }
+
+  //"안녕" 문자열을 출력하는 기능을 가진 메서드를 정의
+  public static void printHello() {
+    System.out.println("안녕");
   }
 }
