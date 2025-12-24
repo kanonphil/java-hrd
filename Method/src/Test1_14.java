@@ -11,9 +11,9 @@ public class Test1_14 {
   }
 
   public static void printMultiple(int a, int b) {
-    int max = Math.max(a, b);
-    int min = Math.min(a, b);
-    IntStream.rangeClosed(min, max).filter(i -> i % 5 == 0).forEach(i -> System.out.print(i + " "));
+    IntStream.rangeClosed(Math.min(a, b), Math.max(a, b))
+            .filter(i -> i % 5 == 0)
+            .forEach(i -> System.out.print(i + " "));
   }
 
   /*public static void printMultiple(int a, int b) {

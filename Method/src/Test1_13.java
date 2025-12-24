@@ -13,7 +13,8 @@ public class Test1_13 {
   public static void printNum(int a, int b) {
     int max = Math.max(a, b);
     int min = Math.min(a, b);
-    IntStream.range(min + 1, max).forEach(i -> System.out.print(i + " "));
+    IntStream.range(Math.min(a, b) + 1, Math.max(a, b))
+            .forEach(i -> System.out.print(i + " "));
   }
 
   /*public static void printNum(int a, int b) {
