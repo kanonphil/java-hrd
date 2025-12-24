@@ -9,6 +9,7 @@ public class Test1_12 {
     printInt(5);
   }
 
+  //rangeClosed 0 이상 a 이하
   public static void printInt(int a) {
     IntStream.rangeClosed(0, a).forEach(i -> System.out.print(i + " "));
   }

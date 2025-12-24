@@ -10,6 +10,7 @@ public class Test1_15 {
     printStrNum("안녕", 5);
   }
 
+  //range 0 이상 a 미만
   public static void printStrNum(String str, int a) {
     IntStream.range(0, a).forEach(i -> System.out.println(str));
   }
