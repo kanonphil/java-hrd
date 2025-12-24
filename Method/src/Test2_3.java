@@ -5,11 +5,6 @@ public class Test2_3 {
   }
 
   public static int getBigNum(int num1, int num2) {
-    if (num1 > num2) {
-      return num1;
-    }
-    else {
-      return num2;
-    }
+    return Math.max(num1, num2);
   }
 }

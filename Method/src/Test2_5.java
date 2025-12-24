@@ -7,14 +7,6 @@ public class Test2_5 {
   }
 
   public static String getGrade(int num) {
-    if (num >= 90) {
-      return "A";
-    }
-    else if (num >= 70) {
-      return "B";
-    }
-    else {
-      return "C";
-    }
+    return num >= 90 ? "A" : num >= 70 ? "B" : "C";
   }
 }

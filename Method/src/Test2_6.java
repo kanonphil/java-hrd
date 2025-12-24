@@ -6,7 +6,6 @@ public class Test2_6 {
   }
 
   public static String getIntToString(int num) {
-    String str = Integer.toString(num);
-    return str;
+    return Integer.toString(num);
   }
 }

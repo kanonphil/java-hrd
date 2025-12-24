@@ -10,7 +10,6 @@ public class Test2_2 {
   }
 
   public static int getMul(int num1, int num2) {
-    int mul = num1 * num2;
-    return mul;
+    return num1 * num2;
   }
 }
