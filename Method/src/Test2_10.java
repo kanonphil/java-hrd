@@ -7,13 +7,4 @@ public class Test2_10 {
   public static boolean isEven(int num) {
     return num % 2 == 0;
   }
-
-  /*public static boolean isEven(int num) {
-    if (num % 2 == 0) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }*/
 }
