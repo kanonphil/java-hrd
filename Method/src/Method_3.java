@@ -2,8 +2,12 @@ public class Method_3 {
   public static void main(String[] args) {
     System.out.println("시작");
     printAge(20);
-    printAge(21);
-    printAge(22);
+    printAge(30);
+    printAge(40);
+
+    int age = 40;
+    printAge(age);
+
     System.out.println("종료");
   }
 
