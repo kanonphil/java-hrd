@@ -7,6 +7,14 @@ public class Test2_5 {
   }
 
   public static String getGrade(int num) {
-    return num >= 90 ? "A" : num >= 70 ? "B" : "C";
+    //삼항 연산자
+    //return num >= 90 ? "A" : num >= 70 ? "B" : "C";
+
+    //switch expression
+    return switch (num / 10) {
+      case 10, 9 -> "A";
+      case 8, 7 -> "B";
+      default -> "C";
+    };
   }
 }

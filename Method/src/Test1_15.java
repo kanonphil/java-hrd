@@ -7,12 +7,12 @@ public class Test1_15 {
     String str = sc.next();
     int num = sc.nextInt();
     printStrNum(str, num);*/
-    printStrNum("안녕", 5);
+    printStrNum("kim", 5);
   }
 
   //range 0 이상 a 미만
   public static void printStrNum(String str, int a) {
-    IntStream.range(0, a).forEach(i -> System.out.println(str));
+    IntStream.range(0, a).forEach(i -> System.out.print(str));
   }
 
   /*public static void printStrNum(String str, int a) {
