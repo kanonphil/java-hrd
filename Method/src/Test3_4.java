@@ -4,11 +4,6 @@ public class Test3_4 {
   }
 
   public static boolean getEven(int num) {
-    if (num % 2 == 0) {
-      return true;
-    }
-    else {
-      return false;
-    }
+    return num % 2 == 0;
   }
 }
