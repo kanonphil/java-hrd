@@ -6,13 +6,6 @@ public class Member {
   String password;
   int age;
 
-  public Member(String name, String userId, String password, int age) {
-    this.name = name;
-    this.userId = userId;
-    this.password = password;
-    this.age = age;
-  }
-
   public void setMember(String name, String userId, String password, int age) {
     this.name = name;
     this.userId = userId;
