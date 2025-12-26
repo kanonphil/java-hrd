@@ -1,18 +1,25 @@
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Test3_8 {
   public static void main(String[] args) {
-    Integer[] arr1 = {1, 2, 3};
-    Integer[] arr2 = {4, 5, 6};
+    int[] arr1 = {1, 2, 3};
+    int[] arr2 = {4, 5, 6};
 //    System.out.println(Arrays.toString(getArray(arr1, arr2)));
-    System.out.println(Arrays.toString(addArray(arr1, arr2)));
+    System.out.println(Arrays.toString(margeArrays(arr1, arr2)));
   }
 
   //Stream 사용
-  public static Integer[] addArray(Integer[] arr1, Integer[] arr2) {
-    Integer[] arr = Stream.concat(Arrays.stream(arr1), Arrays.stream(arr2)).toArray(Integer[]::new);
-    return arr;
+  public static int[] margeArrays(int[] arr1, int[] arr2) {
+    if (arr1 == null || arr2 == null) {
+      throw new IllegalArgumentException("배열이 null입니다");
+    }
+
+    return IntStream.concat(
+            Arrays.stream(arr1),
+            Arrays.stream(arr2)
+    ).toArray();
   }
 
   /*public static int[] getArray(int[] arr1, int[] arr2) {

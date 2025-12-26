@@ -8,7 +8,9 @@ public class Test3_6 {
 
   //Stream 사용
   public static int getMax(int[] arr) {
-    return Arrays.stream(arr).max().getAsInt();
+    return Arrays.stream(arr).max()
+            //배열이 비어있을 때 반환
+            .orElseThrow(() -> new IllegalArgumentException("배열이 비어있습니다"));
   }
 
   /*public static int getMax(int[] arr) {

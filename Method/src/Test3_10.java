@@ -1,9 +1,9 @@
 public class Test3_10 {
   public static void main(String[] args) {
-    switchingNum(10, 20);
+    swap(10, 20);
   }
 
-  public static void switchingNum(int a, int b) {
+  public static void swap(int a, int b) {
     int t = a;
     a = b;
     b = t;
