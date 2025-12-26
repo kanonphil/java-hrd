@@ -11,9 +11,7 @@ public class Test2_8 {
     return Arrays.stream(numbers).average().orElse(0.0);
   }
 
-  /*public static double getAvg(int num1, int num2, int num3) {
-    int sum = num1 + num2 + num3;
-    double avg = sum / 3.0;
-    return avg;
+  /*public static double getAvg(int a, int b, int c) {
+    return = (a + b + c) / 3.0;
   }*/
 }
