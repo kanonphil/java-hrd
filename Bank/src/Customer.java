@@ -1,8 +1,8 @@
 public class Customer {
-  private String name;
-  private String residentNumber;
-  private String phoneNumber;
-  private Account account;
+  private final String name;
+  private final String residentNumber;
+  private final String phoneNumber;
+  private final Account account;
 
   public Customer(String name, String residentNumber, String phoneNumber, Account account) {
     this.name = name;

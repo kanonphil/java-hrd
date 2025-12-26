@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class BankService {
-  private Customer[] customers;
+  private final Customer[] customers;
   private int customerCount;
-  private Scanner sc;
+  private final Scanner sc;
 
   public BankService() {
     customers = new Customer[5];
