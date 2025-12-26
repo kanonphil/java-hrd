@@ -18,7 +18,7 @@ public class Calculator {
     this.operator = operator;
   }
 
-  public void calc() {
+  public void calculate() {
     switch (this.operator) {
       case "+":
         result = num1 + num2;

@@ -13,6 +13,6 @@ public class CalculatorTest {
     System.out.print("연산자 : ");
     calc.setOperator(sc.next());
 
-    calc.calc();
+    calc.calculate();
   }
 }
