@@ -1,19 +1,11 @@
 package Test1_6_8;
 
 public class Phone {
-  private String manufacturer;
-  private String modelName;
-  private String color;
-  private int price;
-  private String phoneNumber;
-
-  public Phone(String manufacturer, String modelName, String color, int price, String phoneNumber) {
-    this.manufacturer = manufacturer;
-    this.modelName = modelName;
-    this.color = color;
-    this.price = price;
-    this.phoneNumber = phoneNumber;
-  }
+  String manufacturer;
+  String modelName;
+  String color;
+  int price;
+  String phoneNumber;
 
   public void setManufacturer(String manufacturer) {
     this.manufacturer = manufacturer;
