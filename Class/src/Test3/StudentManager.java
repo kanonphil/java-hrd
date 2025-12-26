@@ -34,6 +34,10 @@ public class StudentManager {
   }
 
   public void fixPhoneNumber() {
-
+    System.out.println("학생의 연락처를 변경합니다.");
+    System.out.print("변경 학생 : ");
+    String name = sc.nextLine();
+    if (name.equals(students.getName()))
+    System.out.print("연락처 : ");
   }
 }
