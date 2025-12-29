@@ -46,14 +46,84 @@ public class StudentManager {
     System.out.println();
   }
 
+  // 이름으로 학생 찾기 (여러 명 가능)
+  private Student[] findStudentsByName(String name) {
+    Student[] foundStudents = new Student[studentCount];
+    int foundCount = 0;
+
+    for (int i = 0; i < studentCount; i++) {
+      if (students[i].getName().equals(name)) {
+        foundStudents[foundCount++] = students[i];
+      }
+    }
+
+    // 찾은 학생들만 담은 배열 반환
+    Student[] result = new Student[foundCount];
+    for (int i = 0; i < foundCount; i++) {
+      result[i] = foundStudents[i];
+    }
+    return result;
+  }
+
+  // 동명이인 중 학번으로 선택
+  private Student selectStudentById(Student[] candidates) {
+    System.out.println("동명이인이 " + candidates.length + "명 있습니다.");
+    for (int i = 0; i < candidates.length; i++) {
+      System.out.println((i + 1) + ") 학번: " + candidates[i].getId() +
+              ", 나이: " + candidates[i].getAge() +
+              ", 학점: " + candidates[i].getGrade());
+    }
+
+    System.out.print("학번을 입력하세요 : ");
+    String id = sc.nextLine();
+
+    for (Student candidate : candidates) {
+      if (candidate.getId().equals(id)) {
+        return candidate;
+      }
+    }
+
+    System.out.println("입력한 학번이 목록에 없습니다.");
+    return null;
+  }
+
   // 학생정보변경(연락처)
   public void changePhoneNumber() {
     System.out.println("학생의 연락처를 변경합니다.");
-    System.out.print("변경 학생 학번 : ");
-    String id = sc.nextLine();
-//    String name = sc.nextLine();
+    System.out.print("변경 학생 이름 : ");
+//    String id = sc.nextLine();
+    String name = sc.nextLine();
 
-    // 입력된 학번의 학생 찾기
+    // 이름으로 학생 찾기
+    Student[] foundStudents = findStudentsByName(name);
+
+    if (foundStudents.length == 0) {
+      System.out.println("해당 학생을 찾을 수 없습니다.");
+      return;
+    }
+
+    Student targetStudent;
+    if (foundStudents.length == 1) {
+      // 한 명만 있으면 바로 선택
+      targetStudent = foundStudents[0];
+    }
+    else {
+      // 여러 명이면 학번으로 선택
+      targetStudent = selectStudentById(foundStudents);
+      if (targetStudent == null) {
+        return;
+      }
+    }
+
+    // 연락처 변경
+    System.out.print("연락처 : ");
+    String newPhoneNumber = sc.nextLine();
+
+    targetStudent.setPhoneNumber(newPhoneNumber);
+    System.out.println("변경 완료 되었습니다.");
+    System.out.println();
+
+    /*// 입력된 학번의 학생 찾기
     Student targetStudent = null;
     for (int i = 0; i < studentCount; i++) {
       if (students[i].getId().equals(id)) {
@@ -74,16 +144,35 @@ public class StudentManager {
 
     targetStudent.setPhoneNumber(newPhoneNumber);
     System.out.println("변경 완료 되었습니다.");
-    System.out.println();
+    System.out.println();*/
   }
 
   // 학생 정보 출력
   public void printStudent() {
-    System.out.print("정보를 열람할 학생의 학번 : ");
-    String id = sc.nextLine();
-//    String name = sc.nextLine();
+    System.out.print("정보를 열람할 학생의 이름 : ");
+    String name = sc.nextLine();
 
-    Student targetStudent = null;
+    // 이름으로 학생 찾기
+    Student[] foundStudents = findStudentsByName(name);
+
+    if (foundStudents.length == 0) {
+      System.out.println("해당 학생을 찾을 수 없습니다.");
+      return;
+    }
+
+    Student targetStudent;
+    if (foundStudents.length == 1) {
+      targetStudent = foundStudents[0];
+    }
+    else {
+      targetStudent = selectStudentById(foundStudents);
+      if (targetStudent == null) {
+        return;
+      }
+    }
+
+
+    /*Student targetStudent = null;
     for (int i = 0; i < studentCount; i++) {
       if (students[i].getId().equals(id)) {
         targetStudent = students[i];
@@ -94,7 +183,7 @@ public class StudentManager {
     if (targetStudent == null) {
       System.out.println("해당 학생을 찾을 수 없습니다.");
       return;
-    }
+    }*/
 
     System.out.println("요청하신 학생의 정보입니다.");
     System.out.print("학번 : " + targetStudent.getId());
@@ -107,6 +196,12 @@ public class StudentManager {
 
   // 모든 학생 정보 출력
   public void printAllStudent() {
+    if (studentCount == 0) {
+      System.out.println("등록된 학생이 없습니다.");
+      System.out.println();
+      return;
+    }
+
     System.out.println("모든 학생의 정보입니다. 현재 총 학생 수는 " + studentCount + "명입니다.");
     for (int i = 0; i < studentCount; i++) {
       Student s = students[i];
