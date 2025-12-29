@@ -5,13 +5,11 @@ import java.util.Scanner;
 public class Calculator {
   int a;
   int b;
-  int result;
   String operator;
   Scanner sc;
 
   public Calculator() {
     sc = new Scanner(System.in);
-    result = 0;
   }
 
   public void run() {
