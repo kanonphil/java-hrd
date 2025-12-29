@@ -2,7 +2,12 @@ public class Circle {
   double r;
 
   public void setR(double r) {
-    this.r = r;
+    if (r < 0) {
+      this.r = 0.0;
+    }
+    else {
+      this.r = r;
+    }
   }
 
   //원의 둘레를 리턴    2πr
