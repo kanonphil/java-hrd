@@ -15,30 +15,35 @@ public class Calculator {
   }
 
   public void run() {
-    while (true) {
-      System.out.print("첫 번째 수 : ");
-      a = sc.nextInt();
-      System.out.print("두 번째 수 : ");
-      b = sc.nextInt();
-      sc.nextLine();
-      System.out.print("연산자 : ");
-      operator = sc.nextLine();
+    System.out.print("첫 번째 수 : ");
+    a = sc.nextInt();
+    System.out.print("두 번째 수 : ");
+    b = sc.nextInt();
+    sc.nextLine();
+    System.out.print("연산자 : ");
+    operator = sc.nextLine();
 
-      switch (operator) {
-        case "+":
-          Add add = new Add();
-          add.setValue(a, b);
-          result = add.calculate();
-          break;
-        case "-":
-          Sub sub = new Sub();
-          sub.setValue(a, b);
-          result = sub.calculate();
-        case "*":
-        case "/":
-        default:
-
-      }
+    switch (operator) {
+      case "+":
+        Add add = new Add();
+        add.setValue(a, b);
+        System.out.println(a + " + " + b + " = " + add.calculate());
+        break;
+      case "-":
+        Sub sub = new Sub();
+        sub.setValue(a, b);
+        System.out.println(a + " - " + b + " = " + sub.calculate());
+        break;
+      case "*":
+        Mul mul = new Mul();
+        mul.setValue(a, b);
+        System.out.println(a + " * " + b + " = " + mul.calculate());
+        break;
+      case "/":
+        Div div = new Div();
+        div.setValue(a, b);
+        System.out.println(a + " / " + b + " = " + div.calculate());
+        break;
     }
   }
 }
