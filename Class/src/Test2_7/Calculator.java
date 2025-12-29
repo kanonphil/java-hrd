@@ -3,10 +3,10 @@ package Test2_7;
 import java.util.Scanner;
 
 public class Calculator {
-  int a;
-  int b;
-  String operator;
-  Scanner sc;
+  private int a;
+  private int b;
+  private String operator;
+  private Scanner sc;
 
   public Calculator() {
     sc = new Scanner(System.in);

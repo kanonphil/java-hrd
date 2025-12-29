@@ -1,9 +1,9 @@
 package Test2_1_4;
 
 public class Member {
-  String name;
-  String id;
-  String password;
+  private String name;
+  private String id;
+  private String password;
 
   public Member() {
 
