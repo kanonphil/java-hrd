@@ -1,12 +1,12 @@
 package Test3;
 
 public class Student {
-  private final String name;
-  private final int age;
-  private final String phoneNumber;
-  private final String grade;
+  private String name;
+  private String age;
+  private String phoneNumber;
+  private String grade;
 
-  public Student(String name, int age, String phoneNumber, String grade) {
+  public Student(String name, String age, String phoneNumber, String grade) {
     this.name = name;
     this.age = age;
     this.phoneNumber = phoneNumber;
@@ -17,7 +17,7 @@ public class Student {
     return name;
   }
 
-  public int getAge() {
+  public String getAge() {
     return age;
   }
 
@@ -27,5 +27,9 @@ public class Student {
 
   public String getPhoneNumber() {
     return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
   }
 }
