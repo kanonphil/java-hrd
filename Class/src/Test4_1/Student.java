@@ -1,4 +1,4 @@
-package Test2_1;
+package Test4_1;
 
 public class Student {
   private PersonInfo personInfo;

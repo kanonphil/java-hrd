@@ -1,4 +1,4 @@
-package Test2_2;
+package Test4_2;
 
 public class Seat {
   private String[] seats;
