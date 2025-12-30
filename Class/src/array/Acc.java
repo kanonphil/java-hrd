@@ -27,6 +27,10 @@ public class Acc {
     return balance;
   }
 
+  public void setBalance(int balance) {
+    this.balance = balance;
+  }
+
   @Override
   public String toString() {
     return "array.Acc{" +

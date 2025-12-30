@@ -1,4 +1,4 @@
-package test3;
+package stu;
 
 public class Student {
   private String id;
