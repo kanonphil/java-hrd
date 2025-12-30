@@ -15,7 +15,7 @@ public class CompactDisc extends Product {
   public void printInfo() {
     super.printInfo();
     System.out.println("앨범 제목 >> " + albumTitle);
-    System.out.println("가수 이름 >> " + singerName);
+    System.out.println("가수 >> " + singerName);
   }
 
   public String getAlbumTitle() {
