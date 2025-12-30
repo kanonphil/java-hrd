@@ -29,7 +29,7 @@ public class Rectangle {
   }
 
   public void show() {
-    System.out.println("좌표: (" + x1 + ", " + y1 + ", " + x2 + ", " + y2 + ")");
+    System.out.println("좌표: (" + x1 + ", " + y1 + "), (" + x2 + ", " + y2 + ")");
     System.out.println("넓이: " + square());
   }
 
