@@ -1,7 +1,7 @@
 package stu;
 
 public class Student {
-  private String id;
+  private final String id;
   private String name;
   private String age;
   private String phoneNumber;
