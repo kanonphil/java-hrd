@@ -4,7 +4,7 @@ public class CompactDisc extends Product {
   private String albumTitle;
   private String singerName;
 
-  public CompactDisc(String productId, String description, String manufacturer, int price,
+  public CompactDisc(int productId, String description, String manufacturer, int price,
                      String albumTitle, String singerName) {
     super(productId, description, manufacturer, price);
     this.albumTitle = albumTitle;
