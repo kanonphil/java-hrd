@@ -34,7 +34,6 @@ public class Rectangle {
   }
 
   public boolean equals(Rectangle r) {
-    return this.x1 == r.x1 || this.y1 == r.y1 || this.x2 == r.x2 || this.y2 == r.y2;
-    //return this.square() == r.square();
+    return this.square() == r.square();
   }
 }
