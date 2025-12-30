@@ -2,12 +2,12 @@ package stu;
 
 import java.util.Scanner;
 
-public class StudentManager {
+public class StudentService {
   private Student[] students;
   private int studentCount;
   private Scanner sc;
 
-  public StudentManager() {
+  public StudentService() {
     students = new Student[3];
     studentCount = 0;
     sc = new Scanner(System.in);
