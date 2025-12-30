@@ -12,6 +12,7 @@ public class AccTest1 {
 
     //문제2. 배열의 0번째 요소에 저장한 계좌번호 출력
     System.out.println(arr[0].getAccNumber());
+    System.out.println(arr[0].getOwner());
 
     //문제3. 배열에 저장된 모든 계좌의 예금액 합을 출력
     int sum = 0;
