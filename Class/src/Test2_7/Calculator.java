@@ -42,6 +42,8 @@ public class Calculator {
         div.setValue(a, b);
         System.out.println(a + " / " + b + " = " + div.calculate());
         break;
+      default:
+        System.out.println("연산자를 잘못 입력했습니다.");
     }
   }
 }
