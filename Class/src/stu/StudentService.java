@@ -34,10 +34,21 @@ public class StudentService {
 
     System.out.print("이름 : ");
     String name = sc.nextLine();
+
     System.out.print("나이 : ");
     String age = sc.nextLine();
+
     System.out.print("연락처 : ");
     String phoneNumber = sc.nextLine();
+
+    //연락처 중복 확인
+    for (int i = 0; i < studentCount; i++) {
+      if (students[i].getPhoneNumber().equals(phoneNumber)) {
+        System.out.println("동일한 연락처가 존재합니다.");
+        return;
+      }
+    }
+
     System.out.print("학점 : ");
     String grade = sc.nextLine();
 
@@ -118,6 +129,14 @@ public class StudentService {
     // 연락처 변경
     System.out.print("연락처 : ");
     String newPhoneNumber = sc.nextLine();
+
+
+    for (Student student : students) {
+      if (student.getPhoneNumber().equals(newPhoneNumber)) {
+        System.out.println("동일한 연락처가 존재합니다.");
+        return;
+      }
+    }
 
     targetStudent.setPhoneNumber(newPhoneNumber);
     System.out.println("변경 완료 되었습니다.");
