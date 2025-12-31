@@ -111,6 +111,9 @@ public class StudentService {
   // 학생정보변경(연락처)
   public void changePhoneNumber() {
     System.out.println("학생의 연락처를 변경합니다.");
+    for (int i = 0; i < studentCount; i++) {
+      System.out.println(i + 1 + ") " + students[i].getName());
+    }
     System.out.print("변경 학생 이름 : ");
 //    String id = sc.nextLine();
     String name = sc.nextLine();
