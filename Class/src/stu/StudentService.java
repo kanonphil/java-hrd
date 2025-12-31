@@ -141,9 +141,8 @@ public class StudentService {
     System.out.print("변경 연락처 : ");
     String newPhoneNumber = sc.nextLine();
 
-
-    for (Student student : students) {
-      if (student.getPhoneNumber().equals(newPhoneNumber)) {
+    for (int i = 0; i < studentCount; i++) {
+      if (students[i].getPhoneNumber().equals(newPhoneNumber)) {
         System.out.println("동일한 연락처가 존재합니다.");
         return;
       }
