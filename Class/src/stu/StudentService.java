@@ -70,10 +70,20 @@ public class StudentService {
 
     // 찾은 학생들만 담은 배열 반환
     Student[] result = new Student[foundCount];
+    System.arraycopy(foundStudents, 0, result, 0, foundCount);
+    return result;
+
+    //return Arrays.copyOf(foundStudents, foundCount);
+    //Arrays.copyOf: 새로운 배열 생성 가능, 전부 복사하거나 복사 대상의 객체를 유지시킬 필요가 없을 때 사용 추천.
+    //System.arraycopy(): 복사 길이를 명시해야 하거나, 객체를 유지하고자 할 때 사용 추천.
+
+    /*
+    Student[] result = new Student[foundCount];
     for (int i = 0; i < foundCount; i++) {
       result[i] = foundStudents[i];
     }
     return result;
+    */
   }
 
   // 동명이인 중 학번으로 선택
@@ -126,8 +136,9 @@ public class StudentService {
       }
     }
 
+    System.out.println("기존 연락처 : " + targetStudent.getPhoneNumber());
     // 연락처 변경
-    System.out.print("연락처 : ");
+    System.out.print("변경 연락처 : ");
     String newPhoneNumber = sc.nextLine();
 
 
