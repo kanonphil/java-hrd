@@ -90,7 +90,7 @@ public class ProductInfo {
     products[productCount] = new ConversationBook(productCount, desc, manu, price,
                                                   isbn, author, title, language);
     productCount++;
-    System.out.println("회확책이 추가되었습니다.");
+    System.out.println("회화책이 추가되었습니다.");
   }
 
   private static void printAllProducts() {
