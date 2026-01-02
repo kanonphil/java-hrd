@@ -38,9 +38,6 @@ private를 protected로 변경
 
 7
 test1_8.Main.java
-class C extends B {
-    public double d;
-}
 
 8
 test1_9.Work.java

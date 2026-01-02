@@ -12,26 +12,17 @@ class A {
   }
 }
 
-class B {
+class B extends A {
   public String s;
-  private int n;
   public int m;
   private char c;
 
-  public int getN() {
-    return n;
-  }
-
-  public void setN(int i) {
-    n = i;
+  public void setC(char ch) {
+    c = ch;
   }
 
   public char getC() {
     return c;
-  }
-
-  public void setC(char ch) {
-    c = ch;
   }
 }
 
