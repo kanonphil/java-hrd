@@ -33,6 +33,8 @@ private 접근제어자로 선언된 맴버는 해당 클래스 내부에서만 
 public int getSum(){
     return n + i + getJ();
 }
+or
+private를 protected로 변경
 
 7
 class C extends B {
