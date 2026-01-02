@@ -11,6 +11,10 @@ class A {
   public void setJ(int j) {
     this.j = j;
   }
+
+  public void setI(int i) {
+    this.i = i;
+  }
 }
 
 class B extends A {
@@ -24,12 +28,24 @@ class B extends A {
     this.n = n;
   }
 
+  public int getSum() {
+    return n + i + getJ();
+  }
+
   /*public int getSum() {
     return n + i + j;
   }*/
 }
 
 public class Test1_5 {
+  public static void main(String[] args) {
+    B b = new B();
+    b.setN(10);
+    b.setI(10);
+    b.setJ(10);
+    System.out.println(b.getSum());
+  }
+
 }
 
 
