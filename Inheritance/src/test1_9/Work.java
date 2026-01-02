@@ -9,6 +9,11 @@ class A {
     this.y = 1;
   }
 
+  public A(int x) {
+    this.x = x;
+    this.y = 1;
+  }
+
   public A(int x, int y) {
     this.x = x;
     this.y = y;
@@ -33,9 +38,9 @@ class B extends A {
     this.y = 1;
   }
 
-  public B(int x) {
-    super();
-    this.x = x;
+  public B(int ax) {
+    super(ax);
+    this.x = 1;
     this.y = 1;
   }
 
