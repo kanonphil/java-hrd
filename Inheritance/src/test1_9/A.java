@@ -19,11 +19,7 @@ class A {
     this.y = y;
   }
 
-  public int getX() {
-    return x;
-  }
-
-  public int getY() {
-    return y;
+  public void disp() {
+    System.out.print("x = " + x + ", y = " + y);
   }
 }

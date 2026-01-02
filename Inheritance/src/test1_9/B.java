@@ -34,7 +34,9 @@ class B extends A {
     this.y = by;
   }
 
+  @Override
   public void disp() {
-    System.out.println("x = " + getX() + ", y = " + getY() + ", x = " + this.x + ", y = " + this.y);
+    super.disp();
+    System.out.println(", x = " + x + ", y = " + y);
   }
 }
