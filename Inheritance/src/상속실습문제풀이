@@ -1,0 +1,43 @@
+2-1
+매개변수생성자A30
+생성자B
+
+2-2
+super();는 생성자 첫 줄에 와야함.
+
+3
+생성자A:10
+생성자A
+생성자B:11
+
+5
+class A의 기본생성자가 존재하지 않음.
+or super(int);가 존재하지 않음.
+
+6
+super(size);
+
+9
+Parent(String nation) call
+Parent() call
+Child(String name) call
+Child() call
+
+4(2)
+public int getSum(){
+    return n + i + j; // j 오류
+}
+//이유
+private 접근제어자로 선언된 맴버는 해당 클래스 내부에서만 접근 가능.
+//수정
+public int getSum(){
+    return n + i + getJ();
+}
+
+7
+class C extends B {
+    public double d;
+}
+
+8
+test.Work.java
