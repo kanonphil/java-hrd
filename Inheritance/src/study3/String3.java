@@ -1,5 +1,7 @@
 package study3;
 
+import java.util.Arrays;
+
 public class String3 {
   public static void main(String[] args) {
     //String 클래스에서 많이 사용하는 메서드들
@@ -20,6 +22,24 @@ public class String3 {
     //contains : 매개변수로 전달된 문자열의 포함 여부.
     System.out.println(s3.contains("1"));
 
+    //substring() : 일부 문자열 추출
+    String s4 = "abcdefg";
+    //문자열의 2번째 요소부터 추출(0번부터 시작)
+    System.out.println(s4.substring(2));
+    //문자열의 2번째 요소부터 5번째 전까지
+    System.out.println(s4.substring(2, 5));
 
+    //replace : 문자열 교체
+    System.out.println(s4.replace("cde", "p"));
+
+    String s5 = "010-1111-2222";
+    //split : 매개변수로 전달된 문자열을 기준으로 분리
+    //s5 문자열을 "-" 기준으로 분리
+    String[] result = s5.split("-");
+    System.out.println(Arrays.toString(result));
+
+    //trim : 문자열 앞 뒤 공백 제거
+    String s6 = " a b c ";
+    System.out.println(s6.trim());
   }
 }
