@@ -7,13 +7,23 @@ package study3;
 // 결론 : 자바의 모든 클래스는 Object 클래스를 상속한다.
 // 파생 결론 : Object 클래스로 모든 객체를 받을 수 있다.
 public class Student {
-  private int stuNum;
+  int stuNum;
   private String name;
   private int score;
 
   @Override
   public boolean equals(Object obj) {
-    return super.equals(obj);
+    Student a = (Student) obj;
+    return stuNum == a.stuNum;
+  }
+
+  @Override
+  public String toString() {
+    return "Student{" +
+            "stuNum=" + stuNum +
+            ", name='" + name + '\'' +
+            ", score=" + score +
+            '}';
   }
 
   //매개변수에 무엇이든 다 넣겠다..
