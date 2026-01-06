@@ -3,24 +3,27 @@ package test;
 public class MyArray implements ArrayUtil {
   @Override
   public int getArraySum(int[] arr1, int[] arr2) {
-    int sum = 0;
+    int sum1 = 0;
+    int sum2 = 0;
     for (int i : arr1) {
-      sum += i;
+      sum1 += i;
     }
     for (int i : arr2) {
-      sum += i;
+      sum2 += i;
     }
-    return sum / arr1.length + arr2.length;
+    return (sum1 + sum2) / arr1.length + arr2.length;
   }
 
   @Override
   public boolean isEvenArray(int[] arr) {
+    boolean isAllEven = true;
     for (int i : arr) {
       if (i % 2 != 0) {
-        return false;
+        isAllEven = false;
+        break;
       }
     }
-    return true;
+    return isAllEven;
   }
 
   @Override
