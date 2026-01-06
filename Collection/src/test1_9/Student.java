@@ -57,4 +57,8 @@ public class Student {
             ", total=" + total +
             '}';
   }
+
+  public double getAverage() {
+    return korScore + engScore / 2.0;
+  }
 }

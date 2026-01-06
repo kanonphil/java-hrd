@@ -12,5 +12,26 @@ public class TestStudent {
     studentList.add(new Student("c", 65, 95, 160));
 
     System.out.println(studentList);
+
+    for (Student student : studentList) {
+      if (student.getTotal() >= 150) {
+        System.out.println(student);
+      }
+    }
+    System.out.println();
+
+    for (Student student : studentList) {
+      System.out.println(student.getName() + ": " + student.getAverage() + "점");
+    }
+    System.out.println();
+
+    Student topStudent = studentList.get(0);
+    for (Student student : studentList) {
+      if (student.getTotal() > topStudent.getTotal()) {
+        topStudent = student;
+      }
+    }
+
+    System.out.println(topStudent);
   }
 }
