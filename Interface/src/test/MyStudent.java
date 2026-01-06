@@ -13,17 +13,21 @@ public class MyStudent implements StudentUtil {
 
   @Override
   public String getGradeByStudentName(String name, Student... students) {
+    String result = "학생 정보 없음";
     for (Student s : students) {
       if (s.getName().equals(name)) {
         int total = getTotalScore(s);
         double average = total / 3.0;
 
-        return average >= 90 ? "A" :
+        result = getGrade(average);
+        break;
+
+        /*return average >= 90 ? "A" :
                average >= 80 ? "B" :
-               average >= 70 ? "C" : "D";
+               average >= 70 ? "C" : "D";*/
       }
     }
-    return "학생 정보 없음";
+    return result;
   }
 
   @Override
@@ -34,5 +38,20 @@ public class MyStudent implements StudentUtil {
       totals[i] = getTotalScore(students[i]);
     }
     return totals;
+  }
+
+  //점수에 따른 등급을 리턴하는 메서드
+  public String getGrade(double average) {
+    String result;
+    if (average >= 90 && average <= 100) {
+      result = "A";
+    } else if (average >= 80) {
+      result = "B";
+    } else if (average >= 70) {
+      result = "C";
+    } else {
+      result = "D";
+    }
+    return result;
   }
 }
