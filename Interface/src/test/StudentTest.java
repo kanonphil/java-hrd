@@ -8,21 +8,21 @@ public class StudentTest {
 
     Student s1 = new Student();
     s1.setName("a");
-    s1.setKorScore(90);
-    s1.setMathScore(80);
-    s1.setEngScore(70);
+    s1.setKorScore(100);
+    s1.setMathScore(90);
+    s1.setEngScore(80);
 
     Student s2 = new Student();
     s2.setName("b");
-    s2.setKorScore(92);
-    s2.setMathScore(84);
-    s2.setEngScore(45);
+    s2.setKorScore(100);
+    s2.setMathScore(90);
+    s2.setEngScore(90);
 
     Student s3 = new Student();
     s3.setName("c");
     s3.setKorScore(70);
-    s3.setMathScore(75);
-    s3.setEngScore(65);
+    s3.setMathScore(85);
+    s3.setEngScore(95);
 
     System.out.println(result.getTotalScore(s1));
     System.out.println(result.getTotalScore(s2));
