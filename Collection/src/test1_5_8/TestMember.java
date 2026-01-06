@@ -1,10 +1,11 @@
 package test1_5_8;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TestMember {
   public static void main(String[] args) {
-    ArrayList<Member> memberList = new ArrayList<>();
+    List<Member> memberList = new ArrayList<>();
 
     Member member1 = new Member("java", "1234", "홍길동", 25);
     Member member2 = new Member("python", "5678", "김철수", 30);

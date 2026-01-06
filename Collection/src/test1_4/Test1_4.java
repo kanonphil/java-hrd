@@ -1,10 +1,11 @@
 package test1_4;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Test1_4 {
   public static void main(String[] args) {
-    ArrayList<Integer> rand = new ArrayList<>();
+    List<Integer> rand = new ArrayList<>();
     for (int i = 0; i < 10; i++) {
       rand.add((int) (Math.random() * 100 + 1));
     }

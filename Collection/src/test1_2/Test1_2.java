@@ -1,11 +1,12 @@
 package test1_2;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Test1_2 {
   public static void main(String[] args) {
-    ArrayList<Integer> numbers = new ArrayList<>();
+    List<Integer> numbers = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
     System.out.println("5개의 정수를 입력하세요.");
