@@ -8,15 +8,7 @@ public class MyStudent implements StudentUtil {
 
   @Override
   public Student getHighScoreStudent(Student s1, Student s2) {
-    int total1 = getTotalScore(s1);
-    int total2 = getTotalScore(s2);
-    if (total1 > total2) {
-      return s1;
-    } else if (total1 < total2) {
-      return s2;
-    } else {
-      return null;
-    }
+    return getTotalScore(s1) > getTotalScore(s2) ? s1 : s2;
   }
 
   @Override
