@@ -18,13 +18,8 @@ public class MyStudent implements StudentUtil {
       if (s.getName().equals(name)) {
         int total = getTotalScore(s);
         double average = total / 3.0;
-
         result = getGrade(average);
         break;
-
-        /*return average >= 90 ? "A" :
-               average >= 80 ? "B" :
-               average >= 70 ? "C" : "D";*/
       }
     }
     return result;
