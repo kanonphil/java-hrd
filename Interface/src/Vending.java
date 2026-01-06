@@ -2,13 +2,15 @@
 //중요한 것은 메서드의 내용부가 없다는 것이다. -> 추상메서드
 //interface 안에는 맴버변수 사용 못함, 생성자도 없음
 //interface는 생성자가 없기 때문에 객체 생성 x
+//interface에서는 메서드의 접근제한자가 자동으로 public이 붙음
 public interface Vending {
+  //통상적으로 public 안적음(디폴트가 public이기 때문)
   //커피 뽑는 기능
-  public void getCoffee();
+  void getCoffee();
 
   //우유 뽑는 기능
-  public void getMilk();
+  void getMilk();
 
   //돈 넣기 기능
-  public void pay();
+  void pay();
 }
