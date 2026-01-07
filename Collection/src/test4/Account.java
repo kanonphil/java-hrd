@@ -11,10 +11,6 @@ public class Account {
     this.balance = 10000;
   }
 
-  public String getRrn() {
-    return rrn;
-  }
-
   public String getAccountNumber() {
     return accountNumber;
   }
