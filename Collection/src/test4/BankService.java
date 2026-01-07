@@ -126,6 +126,7 @@ public class BankService {
       if (customer.getAccount().getAccountNumber().equals(accNum)) {
         found = true;
         System.out.print(customer.getName() + "님의 계좌를 해지합니다.");
+        System.out.println();
         iterator.remove();
         break;
       }
@@ -142,6 +143,7 @@ public class BankService {
     for (Customer customer : customers) {
       System.out.println("이름 : " + customer.getName() + ", 주번 : " + customer.getRrn() + ", 연락처 : " + customer.getPhoneNumber() + ", 계좌번호 : " + customer.getAccount().getAccountNumber() + ", 예금액 : " + customer.getAccount().getBalance());
     }
+    System.out.println();
   }
 
   //실행
