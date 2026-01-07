@@ -46,12 +46,11 @@ public class BankService {
         if (amount > 0) {
           customer.getAccount().deposit(amount);
           System.out.println("정상 입금되었습니다. 현재 총 예금액은 " + customer.getAccount().getBalance() + "원입니다.");
-          System.out.println();
         }
         else {
           System.out.println("0원 이하는 입금할 수 없습니다.");
-          System.out.println();
         }
+        System.out.println();
         break;
       }
     }
@@ -59,6 +58,7 @@ public class BankService {
     if (!found) {
       System.out.println("해당 계좌번호를 찾을 수 없습니다.");
     }
+    System.out.println();
   }
 
   //출금
@@ -75,24 +75,26 @@ public class BankService {
         int amount = sc.nextInt();
         sc.nextLine();
 
-        if (customer.getAccount().getBalance() - amount >= 0) {
-          customer.getAccount().withdraw(amount);
+        if (customer.getAccount().withdraw(amount)) {
           System.out.println("정상 출금되었습니다. 현재 총 예금액은 " + customer.getAccount().getBalance() + "원입니다.");
-          System.out.println();
         }
         else {
           System.out.println("잔액이 부족합니다.");
-          System.out.println();
         }
+        System.out.println();
+        break;
       }
     }
 
     if (!found) {
       System.out.println("해당 계좌번호를 찾을 수 없습니다.");
     }
+    System.out.println();
   }
 
   //예금조회
+
+
   //계좌해지
   //전체 정보(고객정보, 계좌정보)
 }
