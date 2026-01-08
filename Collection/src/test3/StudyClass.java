@@ -8,14 +8,10 @@ public class StudyClass {
   private String className;
   private String tName;
 
-  public StudyClass(String className, String tName) {
+  public StudyClass(String className, String tName, List<Student> students) {
     this.className = className;
     this.tName = tName;
-    students = new ArrayList<>();
-
-    students.add(new Student("aaa", 20, 90));
-    students.add(new Student("bbb", 22, 70));
-    students.add(new Student("ccc", 25, 80));
+    this.students = students;
   }
 
   //해당 반의 모든 학생의 모든 정보를 출력

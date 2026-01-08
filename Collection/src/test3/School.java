@@ -6,12 +6,8 @@ import java.util.List;
 public class School {
   private List<StudyClass> classes;
 
-  public School() {
-    classes = new ArrayList<>();
-
-    classes.add(new StudyClass("1", "김선생"));
-    classes.add(new StudyClass("2", "이선생"));
-    classes.add(new StudyClass("3", "김선생"));
+  public School(List<StudyClass> classes) {
+    this.classes = classes;
   }
 
   //매개변수로 담당교사 / 담당교사가 맡고 있는 모든 반의 학생 정보를 출력
@@ -55,7 +51,7 @@ public class School {
     }
 
     if (topStudent != null) {
-      System.out.println("전체 최고 성적 학생: " + topStudent.getStuName() + " (" + topStudent.getScore() +")점");
+      System.out.println("전체 최고 성적 학생: " + topStudent.getStuName() + " (" + topStudent.getScore() +"점)");
     }
   }
 
