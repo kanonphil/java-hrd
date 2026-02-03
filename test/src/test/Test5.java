@@ -5,8 +5,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Test5 {
-  static Scanner sc = new Scanner(System.in);
-
   public static void main(String[] args) {
     // 난수 생성
     int[] targetNumbers = generateRandomNumbers();
