@@ -1,5 +1,7 @@
 package test;
 
+import java.util.Objects;
+
 public class Member {
   private String id;
   private String pw;
@@ -21,13 +23,6 @@ public class Member {
   }
 
   public boolean isLogin(String id, String pw) {
-    if (id.equals(this.id) && pw.equals(this.pw)) {
-      System.out.println("로그인 가능");
-      return true;
-    }
-    else {
-      System.out.println("로그인 불가능");
-      return false;
-    }
+    return Objects.equals(this.id, id) && Objects.equals(this.pw, pw);
   }
 }
